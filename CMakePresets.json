@@ -16,10 +16,10 @@
         "type": "equals",
         "lhs": "${hostSystemName}",
         "rhs": "Windows"
-      },
-      "cacheVariables": {
-        "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}"
-      }
+      }//,
+      //"cacheVariables": {
+      //  "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}"
+      //}
     },
     {
       "name": "x64-debug",
@@ -44,29 +44,29 @@
         "CMAKE_BUILD_TYPE": "Release"
       }
     },
-    {
-      "name": "x86-debug",
-      "displayName": "x86 Debug ",
-      "description": "Sets debug build type and x86 arch",
-      "inherits": "base",
-      "architecture": {
-        "value": "x86",
-        "strategy": "external"
-      },
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug",
-        "SDL2_DIR": "C:/vclib/SDL2-2.0.18"
-      }
-    },
-    {
-      "name": "x86-release",
-      "displayName": "x86 Release",
-      "description": "Sets release build type",
-      "inherits": "x86-debug",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release"
-      }
-    },
+    //{
+    //  "name": "x86-debug",
+    //  "displayName": "x86 Debug ",
+    //  "description": "Sets debug build type and x86 arch",
+    //  "inherits": "base",
+    //  "architecture": {
+    //    "value": "x86",
+    //    "strategy": "external"
+    //  },
+    //  "cacheVariables": {
+    //    "CMAKE_BUILD_TYPE": "Debug",
+    //    "SDL2_DIR": "C:/vclib/SDL2-2.0.18"
+    //  }
+    //},
+    //{
+    //  "name": "x86-release",
+    //  "displayName": "x86 Release",
+    //  "description": "Sets release build type",
+    //  "inherits": "x86-debug",
+    //  "cacheVariables": {
+    //    "CMAKE_BUILD_TYPE": "Release"
+    //  }
+    //},
     {
       "name": "linux-debug",
       "displayName": "Linux Debug",
