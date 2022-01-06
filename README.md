@@ -18,5 +18,4 @@ Convert VS project to use CMakePresets.json
 Inside CMakePresets.json
 find cacheVariables{} and append ```"SDL2_DIR": "<PATH TO>/SDL2-2.0.18"``` to configurations that require it
 
-
-
+add sdl2-config.cmake to SDL2-2.0.18 folder
